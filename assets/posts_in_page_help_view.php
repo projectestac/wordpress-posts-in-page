@@ -43,7 +43,23 @@
 			</div>
 		</div>
 	</div>
+	<?php
+	// XTEC ************ MODIFICAT - Remove Help & Support div
+	// 2015.11.25 @nacho
+	if (is_xtec_super_admin()) {
+	?>
+		<div id="sidebar-wrap">
+			<?php require_once 'desc.php'; ?>
+		</div>
+	<?php
+	}
+	?>
+	<!-- ************ ORIGINAL
+    /*
 	<div id="sidebar-wrap">
-		<?php require_once 'desc.php'; ?>
+		<?php //require_once 'desc.php'; ?>
 	</div>
+	*/
+	//************ FI
+	-->
 </div>
